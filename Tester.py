@@ -40,7 +40,7 @@ if __name__ == '__main__':
     pygame.init()
 
     # create our fancy text renderer
-    bigfont = pygame.font.Font("fonts\Condition.ttf", 360)
+    bigfont = pygame.font.Font("fonts/Condition.ttf", 360)
     white = 255, 255, 255
     red = 255, 0, 0
     renderer = textWavey(bigfont, entry_info, white, 10)

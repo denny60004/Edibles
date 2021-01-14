@@ -31,7 +31,7 @@ class EdiblesOnePlayer(Scene):
         # The boolean value telling whether or not a "Game Over" state has been triggered
         self.gameOver = False
         # The font and size for the GUI and "Game Over" text
-        self.plyr = pygame.font.Font("fonts\Condition.ttf", 20 * director.scale)
+        self.plyr = pygame.font.Font("fonts/Condition.ttf", 20 * director.scale)
         # The text object is being changed to print the text "ctrl"
         self.txt = self.plyr.render("ctrl", True, (255, 255, 255))
 
@@ -67,7 +67,7 @@ class EdiblesOnePlayer(Scene):
             pygame.mixer.music.stop()
             self.director.change_scene(EdiblesOnePlayer(self.director))
             # Loads the song
-            pygame.mixer.music.load("music\snakesong.wav")
+            pygame.mixer.music.load("music/snakesong.wav")
             # Plays the loaded song indefinitely
             pygame.mixer.music.play(-1)
         # This conditional statement checks if either of the control buttons are pressed down and if so then it will

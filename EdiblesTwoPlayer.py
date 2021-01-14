@@ -24,7 +24,7 @@ class EdiblesTwoPlayer(Scene):
         # This is a rectangle object with the size being the same as the size of the game window size
         self.screen_rect = director.screen.get_rect()
         # The font and size of the text that will be used to display text on the screen
-        self.plyr = pygame.font.Font("fonts\Condition.ttf", 20 * director.scale)
+        self.plyr = pygame.font.Font("fonts/Condition.ttf", 20 * director.scale)
         # Creates a surface with the text "ctrl" printed on it using the plyr font
         self.txt = self.plyr.render("ctrl", True, (255, 255, 255))
 
@@ -104,7 +104,7 @@ class EdiblesTwoPlayer(Scene):
             pygame.mixer.music.stop()
             self.director.change_scene(EdiblesTwoPlayer(self.director))
             # Loads the song
-            pygame.mixer.music.load("music\snakesong.wav")
+            pygame.mixer.music.load("music/snakesong.wav")
             # Plays the loaded song indefinitely
             pygame.mixer.music.play(-1)
         #  If either of the control buttons are pressed then the scene is chagned to the Title Screen and the Two

@@ -67,7 +67,7 @@ def get_input():
             if event.button == 1:
                 i = 0
                 for control_point in control_points:
-                    if abs(mouse_position[0]-control_point[0]) < 4 and \
+                    if abs(mouse_position[0]-control_point[0]) < 4 and /
                        abs(mouse_position[1]-control_point[1]) < 4:
                         dragging = i
                         break
